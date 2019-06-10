@@ -3,7 +3,7 @@
   <groupId>com.sridhar.example</groupId>
   <artifactId>springboot-oauth2-postgresql</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>springboot-oauth2-postgresql</name>
+  <name>springboot-security-oauth2-postgresql1</name>
   <description>This is an example project demonstrating the use of spring boot, oauth2 and postgresql for database tokenstore implementation. All of this to secure the REST API that it implements</description>
 
 <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent -->
@@ -28,18 +28,18 @@
 	</dependency>
 	
 	<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security -->
-<!-- 	<dependency>
+	<dependency>
 	    <groupId>org.springframework.boot</groupId>
 	    <artifactId>spring-boot-starter-security</artifactId>
 	</dependency>
- -->	
+	
 	<!-- https://mvnrepository.com/artifact/org.springframework.security.oauth/spring-security-oauth2 -->
-<!-- 	<dependency>
+	<dependency>
 	    <groupId>org.springframework.security.oauth</groupId>
 	    <artifactId>spring-security-oauth2</artifactId>
 	    <version>2.3.6.RELEASE</version>
 	</dependency>
- -->	
+	
 	<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-logging -->
 	<dependency>
 	    <groupId>org.springframework.boot</groupId>

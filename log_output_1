@@ -1,0 +1,168 @@
+10-06-2019 18:03:17.550 [HikariPool-2 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool.logPoolState - HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10-06-2019 18:03:18.310 [http-nio-8080-Acceptor-0] DEBUG o.a.tomcat.util.threads.LimitLatch.log - Counting up[http-nio-8080-Acceptor-0] latch=1
+10-06-2019 18:03:18.314 [http-nio-8080-exec-1] DEBUG o.a.tomcat.util.modeler.Registry.log - Managed= Tomcat:type=RequestProcessor,worker="http-nio-8080",name=HttpRequest1
+10-06-2019 18:03:18.315 [http-nio-8080-exec-1] DEBUG o.a.t.util.modeler.BaseModelMBean.log - preRegister org.apache.coyote.RequestInfo@7a57197d Tomcat:type=RequestProcessor,worker="http-nio-8080",name=HttpRequest1
+10-06-2019 18:03:18.315 [http-nio-8080-exec-1] DEBUG o.a.t.util.net.SocketWrapperBase.log - Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@7e6892ef:org.apache.tomcat.util.net.NioChannel@7490f99f:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:38914]], Read from buffer: [0]
+10-06-2019 18:03:18.316 [http-nio-8080-exec-1] DEBUG o.a.coyote.http11.Http11Processor.log - Error parsing HTTP request header
+java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1248) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1183) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.http11.Http11InputBuffer.fill(Http11InputBuffer.java:731) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:352) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:294) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+10-06-2019 18:03:18.316 [http-nio-8080-exec-1] DEBUG o.a.coyote.http11.Http11Processor.log - Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@7e6892ef:org.apache.tomcat.util.net.NioChannel@7490f99f:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:38914]], Status in: [OPEN_READ], State out: [CLOSED]
+10-06-2019 18:03:18.316 [http-nio-8080-Acceptor-0] DEBUG o.a.tomcat.util.threads.LimitLatch.log - Counting up[http-nio-8080-Acceptor-0] latch=2
+10-06-2019 18:03:18.317 [http-nio-8080-exec-1] DEBUG o.a.tomcat.util.threads.LimitLatch.log - Counting down[http-nio-8080-exec-1] latch=2
+10-06-2019 18:03:18.317 [http-nio-8080-exec-1] DEBUG o.apache.tomcat.util.net.NioEndpoint.log - Socket: [org.apache.tomcat.util.net.NioChannel@7490f99f:java.nio.channels.SocketChannel[closed]] closed
+10-06-2019 18:03:18.336 [http-nio-8080-exec-2] DEBUG o.a.t.util.net.SocketWrapperBase.log - Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@7cfaa788:org.apache.tomcat.util.net.NioChannel@723d47bf:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:38916]], Read from buffer: [0]
+10-06-2019 18:03:18.336 [http-nio-8080-exec-2] DEBUG o.apache.tomcat.util.net.NioEndpoint.log - Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@7cfaa788:org.apache.tomcat.util.net.NioChannel@723d47bf:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:38916]], Read direct from socket: [440]
+10-06-2019 18:03:18.337 [http-nio-8080-exec-2] DEBUG o.a.coyote.http11.Http11InputBuffer.log - Received [POST /oauth/token HTTP/1.1
+cache-control: no-cache
+Postman-Token: 321548ce-3a6a-4471-8d61-f53507af6948
+Authorization: Basic c3ByaW5nLXNlY3VyaXR5LW9hdXRoMi1yZWFkLWNsaWVudDpzcHJpbmctc2VjdXJpdHktb2F1dGgyLXJlYWQtY2xpZW50LXBhc3N3b3JkMTIzNA==
+User-Agent: PostmanRuntime/7.6.0
+Accept: */*
+Host: localhost:8080
+cookie: JSESSIONID=E6B376606F54ACCEFE382BFA59926BE8
+accept-encoding: gzip, deflate
+content-length: 0
+Connection: keep-alive
+
+]
+10-06-2019 18:03:18.339 [http-nio-8080-exec-2] DEBUG o.apache.tomcat.util.http.Parameters.log - Set query string encoding to UTF-8
+10-06-2019 18:03:18.339 [http-nio-8080-exec-2] DEBUG o.a.t.u.http.Rfc6265CookieProcessor.log - Cookies: Parsing b[]: JSESSIONID=E6B376606F54ACCEFE382BFA59926BE8
+10-06-2019 18:03:18.339 [http-nio-8080-exec-2] DEBUG o.a.catalina.connector.CoyoteAdapter.log -  Requested cookie session id is E6B376606F54ACCEFE382BFA59926BE8
+10-06-2019 18:03:18.342 [http-nio-8080-exec-2] DEBUG o.a.c.a.AuthenticatorBase.log - Security checking request POST /oauth/token
+10-06-2019 18:03:18.342 [http-nio-8080-exec-2] DEBUG org.apache.catalina.realm.RealmBase.log -   No applicable constraints defined
+10-06-2019 18:03:18.343 [http-nio-8080-exec-2] DEBUG o.a.c.a.AuthenticatorBase.log -  Not subject to any constraint
+10-06-2019 18:03:18.343 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10-06-2019 18:03:18.344 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+10-06-2019 18:03:18.344 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet.initMultipartResolver - Detected StandardServletMultipartResolver
+10-06-2019 18:03:18.368 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet.initServletBean - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+10-06-2019 18:03:18.368 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 24 ms
+10-06-2019 18:03:18.369 [http-nio-8080-exec-2] DEBUG o.apache.tomcat.util.http.Parameters.log - Set encoding to UTF-8
+10-06-2019 18:03:18.369 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/oauth/token']
+10-06-2019 18:03:18.370 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Checking match of request : '/oauth/token'; against '/oauth/token'
+10-06-2019 18:03:18.370 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - matched
+10-06-2019 18:03:18.370 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy.doFilter - /oauth/token at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+10-06-2019 18:03:18.371 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy.doFilter - /oauth/token at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+10-06-2019 18:03:18.371 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy.doFilter - /oauth/token at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+10-06-2019 18:03:18.371 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy.doFilter - /oauth/token at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+10-06-2019 18:03:18.371 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/logout', GET]
+10-06-2019 18:03:18.372 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Request 'POST /oauth/token' doesn't match 'GET /logout'
+10-06-2019 18:03:18.372 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/logout', POST]
+10-06-2019 18:03:18.372 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Checking match of request : '/oauth/token'; against '/logout'
+10-06-2019 18:03:18.373 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/logout', PUT]
+10-06-2019 18:03:18.373 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Request 'POST /oauth/token' doesn't match 'PUT /logout'
+10-06-2019 18:03:18.373 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/logout', DELETE]
+10-06-2019 18:03:18.373 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Request 'POST /oauth/token' doesn't match 'DELETE /logout'
+10-06-2019 18:03:18.373 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - No matches found
+10-06-2019 18:03:18.374 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy.doFilter - /oauth/token at position 5 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+10-06-2019 18:03:18.374 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter.doFilterInternal - Basic Authentication Authorization header found for user 'spring-security-oauth2-read-client'
+10-06-2019 18:03:18.375 [http-nio-8080-exec-2] DEBUG o.s.s.authentication.ProviderManager.authenticate - Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+10-06-2019 18:03:18.624 [http-nio-8080-exec-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory.getSingleton - Creating shared instance of singleton bean 'scopedTarget.clientDetailsService'
+10-06-2019 18:03:18.906 [http-nio-8080-exec-2] DEBUG o.s.jdbc.core.JdbcTemplate.query - Executing prepared SQL query
+10-06-2019 18:03:18.907 [http-nio-8080-exec-2] DEBUG o.s.jdbc.core.JdbcTemplate.execute - Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+10-06-2019 18:03:18.907 [http-nio-8080-exec-2] DEBUG o.s.jdbc.datasource.DataSourceUtils.doGetConnection - Fetching JDBC Connection from DataSource
+10-06-2019 18:03:18.964 [http-nio-8080-exec-2] DEBUG o.s.s.w.h.writers.HstsHeaderWriter.writeHeaders - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@252e1a29
+10-06-2019 18:03:18.964 [http-nio-8080-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter.doFilter - SecurityContextHolder now cleared, as request processing completed
+10-06-2019 18:03:18.966 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet].log - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:244) ~[spring-security-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198) ~[spring-security-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$LazyPasswordEncoder.matches(WebSecurityConfigurerAdapter.java:594) ~[spring-security-config-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:90) ~[spring-security-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166) ~[spring-security-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175) ~[spring-security-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:180) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+10-06-2019 18:03:18.970 [http-nio-8080-exec-2] DEBUG o.a.c.c.C.[Tomcat].[localhost].log - Processing ErrorPage[errorCode=0, location=/error]
+10-06-2019 18:03:18.971 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/oauth/token']
+10-06-2019 18:03:18.971 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Checking match of request : '/error'; against '/oauth/token'
+10-06-2019 18:03:18.972 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/oauth/token_key']
+10-06-2019 18:03:18.972 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Checking match of request : '/error'; against '/oauth/token_key'
+10-06-2019 18:03:18.972 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/oauth/check_token']
+10-06-2019 18:03:18.972 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Checking match of request : '/error'; against '/oauth/check_token'
+10-06-2019 18:03:18.972 [http-nio-8080-exec-2] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - No matches found
+10-06-2019 18:03:18.972 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy.doFilterInternal - /error has no matching filters
+10-06-2019 18:03:18.975 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet.traceDebug - "ERROR" dispatch for POST "/error", parameters={}
+10-06-2019 18:03:18.990 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10-06-2019 18:03:18.992 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor.preHandle - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+10-06-2019 18:03:19.084 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+10-06-2019 18:03:19.097 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug - Writing [{timestamp=Mon Jun 10 18:03:19 IST 2019, status=500, error=Internal Server Error, message=There is n (truncated)...]
+10-06-2019 18:03:19.224 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor.afterCompletion - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+10-06-2019 18:03:19.225 [http-nio-8080-exec-2] INFO  o.h.e.i.StatisticalLoggingSessionEventListener.end - Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10-06-2019 18:03:19.226 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet.logResult - Exiting from "ERROR" dispatch, status 500
+10-06-2019 18:03:19.227 [http-nio-8080-exec-2] DEBUG o.a.c.c.C.[.[.[.[dispatcherServlet].log -  Disabling the response for further output
+10-06-2019 18:03:19.228 [http-nio-8080-exec-2] DEBUG o.a.coyote.http11.Http11Processor.log - Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@7cfaa788:org.apache.tomcat.util.net.NioChannel@723d47bf:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:38916]], Status in: [OPEN_READ], State out: [CLOSED]
+10-06-2019 18:03:19.233 [http-nio-8080-exec-2] DEBUG o.a.tomcat.util.threads.LimitLatch.log - Counting down[http-nio-8080-exec-2] latch=1
+10-06-2019 18:03:19.234 [http-nio-8080-exec-2] DEBUG o.apache.tomcat.util.net.NioEndpoint.log - Socket: [org.apache.tomcat.util.net.NioChannel@723d47bf:java.nio.channels.SocketChannel[closed]] closed
+
