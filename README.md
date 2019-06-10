@@ -1,0 +1,1 @@
+This project is created after my learnings from other sample spring boot + security + oauth2 projects.
