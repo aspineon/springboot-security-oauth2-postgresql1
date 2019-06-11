@@ -1,0 +1,196 @@
+12-06-2019 00:00:55.037 [http-nio-8080-exec-4] DEBUG o.a.t.util.net.SocketWrapperBase.log - Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@d602e3f:org.apache.tomcat.util.net.NioChannel@3a7c03b:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:57380]], Read from buffer: [0]
+12-06-2019 00:00:55.038 [http-nio-8080-exec-4] DEBUG o.apache.tomcat.util.net.NioEndpoint.log - Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@d602e3f:org.apache.tomcat.util.net.NioChannel@3a7c03b:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:57380]], Read direct from socket: [381]
+12-06-2019 00:00:55.038 [http-nio-8080-exec-4] DEBUG o.a.coyote.http11.Http11InputBuffer.log - Received [GET /showCompany/All HTTP/1.1
+Content-Type: application/json
+cache-control: no-cache
+Postman-Token: 3ce02150-0f21-43bc-ba63-1c074a7450ee
+Authorization: Bearer 180e44ef-901f-4a5c-b121-e6d69b036f58
+User-Agent: PostmanRuntime/7.6.0
+Accept: */*
+Host: localhost:8080
+cookie: JSESSIONID=1DAA36164D128B0148EEF7D0418B67E5
+accept-encoding: gzip, deflate
+Connection: keep-alive
+
+]
+12-06-2019 00:00:55.038 [http-nio-8080-exec-4] DEBUG o.a.t.u.http.Rfc6265CookieProcessor.log - Cookies: Parsing b[]: JSESSIONID=1DAA36164D128B0148EEF7D0418B67E5
+12-06-2019 00:00:55.038 [http-nio-8080-exec-4] DEBUG o.a.catalina.connector.CoyoteAdapter.log -  Requested cookie session id is 1DAA36164D128B0148EEF7D0418B67E5
+12-06-2019 00:00:55.038 [http-nio-8080-exec-4] DEBUG o.a.c.a.AuthenticatorBase.log - Security checking request GET /showCompany/All
+12-06-2019 00:00:55.039 [http-nio-8080-exec-4] DEBUG org.apache.catalina.realm.RealmBase.log -   No applicable constraints defined
+12-06-2019 00:00:55.039 [http-nio-8080-exec-4] DEBUG o.a.c.a.AuthenticatorBase.log -  Not subject to any constraint
+12-06-2019 00:00:55.039 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/oauth/token']
+12-06-2019 00:00:55.039 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Checking match of request : '/showCompany/All'; against '/oauth/token'
+12-06-2019 00:00:55.039 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/oauth/token_key']
+12-06-2019 00:00:55.040 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Checking match of request : '/showCompany/All'; against '/oauth/token_key'
+12-06-2019 00:00:55.040 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/oauth/check_token']
+12-06-2019 00:00:55.040 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Checking match of request : '/showCompany/All'; against '/oauth/check_token'
+12-06-2019 00:00:55.040 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - No matches found
+12-06-2019 00:00:55.040 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/**']
+12-06-2019 00:00:55.040 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Request '/showCompany/All' matched by universal pattern '/**'
+12-06-2019 00:00:55.040 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - matched
+12-06-2019 00:00:55.041 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy.doFilter - /showCompany/All at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+12-06-2019 00:00:55.041 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy.doFilter - /showCompany/All at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+12-06-2019 00:00:55.041 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy.doFilter - /showCompany/All at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+12-06-2019 00:00:55.041 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy.doFilter - /showCompany/All at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+12-06-2019 00:00:55.041 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/logout', GET]
+12-06-2019 00:00:55.041 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Checking match of request : '/showCompany/All'; against '/logout'
+12-06-2019 00:00:55.042 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/logout', POST]
+12-06-2019 00:00:55.042 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Request 'GET /showCompany/All' doesn't match 'POST /logout'
+12-06-2019 00:00:55.042 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/logout', PUT]
+12-06-2019 00:00:55.042 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Request 'GET /showCompany/All' doesn't match 'PUT /logout'
+12-06-2019 00:00:55.042 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/logout', DELETE]
+12-06-2019 00:00:55.042 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Request 'GET /showCompany/All' doesn't match 'DELETE /logout'
+12-06-2019 00:00:55.042 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - No matches found
+12-06-2019 00:00:55.043 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy.doFilter - /showCompany/All at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter'
+12-06-2019 00:00:55.043 [http-nio-8080-exec-4] DEBUG o.s.jdbc.core.JdbcTemplate.query - Executing prepared SQL query
+12-06-2019 00:00:55.043 [http-nio-8080-exec-4] DEBUG o.s.jdbc.core.JdbcTemplate.execute - Executing prepared SQL statement [select token_id, token from oauth_access_token where token_id = ?]
+12-06-2019 00:00:55.043 [http-nio-8080-exec-4] DEBUG o.s.jdbc.datasource.DataSourceUtils.doGetConnection - Fetching JDBC Connection from DataSource
+12-06-2019 00:00:55.046 [http-nio-8080-exec-4] DEBUG o.s.jdbc.core.JdbcTemplate.query - Executing prepared SQL query
+12-06-2019 00:00:55.046 [http-nio-8080-exec-4] DEBUG o.s.jdbc.core.JdbcTemplate.execute - Executing prepared SQL statement [select token_id, authentication from oauth_access_token where token_id = ?]
+12-06-2019 00:00:55.046 [http-nio-8080-exec-4] DEBUG o.s.jdbc.datasource.DataSourceUtils.doGetConnection - Fetching JDBC Connection from DataSource
+12-06-2019 00:00:55.050 [http-nio-8080-exec-4] DEBUG o.s.s.o.p.a.OAuth2AuthenticationProcessingFilter.doFilter - Authentication success: org.springframework.security.oauth2.provider.OAuth2Authentication@52a0525: Principal: com.sridhar.example.security.User@69982703; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: com.sridhar.example.security.Authority@7a84c7ce, com.sridhar.example.security.Authority@744336ee, com.sridhar.example.security.Authority@707cacbe, com.sridhar.example.security.Authority@357e3cd5
+12-06-2019 00:00:55.050 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy.doFilter - /showCompany/All at position 6 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+12-06-2019 00:00:55.050 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy.doFilter - /showCompany/All at position 7 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+12-06-2019 00:00:55.050 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy.doFilter - /showCompany/All at position 8 of 11 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+12-06-2019 00:00:55.051 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter.doFilter - SecurityContextHolder not populated with anonymous token, as it already contained: 'org.springframework.security.oauth2.provider.OAuth2Authentication@52a0525: Principal: com.sridhar.example.security.User@69982703; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: com.sridhar.example.security.Authority@7a84c7ce, com.sridhar.example.security.Authority@744336ee, com.sridhar.example.security.Authority@707cacbe, com.sridhar.example.security.Authority@357e3cd5'
+12-06-2019 00:00:55.051 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy.doFilter - /showCompany/All at position 9 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+12-06-2019 00:00:55.051 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.s.CompositeSessionAuthenticationStrategy.onAuthentication - Delegating to org.springframework.security.web.authentication.session.ChangeSessionIdAuthenticationStrategy@1c64d24a
+12-06-2019 00:00:55.054 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy.doFilter - /showCompany/All at position 10 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+12-06-2019 00:00:55.055 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy.doFilter - /showCompany/All at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+12-06-2019 00:00:55.055 [http-nio-8080-exec-4] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Request 'GET /showCompany/All' doesn't match 'POST /**'
+12-06-2019 00:00:55.055 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor.beforeInvocation - Secure object: FilterInvocation: URL: /showCompany/All; Attributes: [#oauth2.throwOnError(#oauth2.hasScope('read'))]
+12-06-2019 00:00:55.055 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor.authenticateIfRequired - Previously Authenticated: org.springframework.security.oauth2.provider.OAuth2Authentication@52a0525: Principal: com.sridhar.example.security.User@69982703; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, sessionId=<SESSION>, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: com.sridhar.example.security.Authority@7a84c7ce, com.sridhar.example.security.Authority@744336ee, com.sridhar.example.security.Authority@707cacbe, com.sridhar.example.security.Authority@357e3cd5
+12-06-2019 00:00:55.056 [http-nio-8080-exec-4] DEBUG o.s.s.access.vote.AffirmativeBased.decide - Voter: org.springframework.security.web.access.expression.WebExpressionVoter@4818898, returned: 1
+12-06-2019 00:00:55.056 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor.beforeInvocation - Authorization successful
+12-06-2019 00:00:55.056 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor.beforeInvocation - RunAsManager did not change Authentication object
+12-06-2019 00:00:55.057 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy.doFilter - /showCompany/All reached end of additional filter chain; proceeding with original chain
+12-06-2019 00:00:55.057 [http-nio-8080-exec-4] DEBUG o.apache.tomcat.util.http.Parameters.log - Set encoding to UTF-8
+12-06-2019 00:00:55.057 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet.traceDebug - GET "/showCompany/All", parameters={}
+12-06-2019 00:00:55.058 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler - Mapped to public java.util.List<com.sridhar.example.model.Company> com.sridhar.example.controller.CompanyController.showAllCompanies()
+12-06-2019 00:00:55.058 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor.preHandle - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+12-06-2019 00:00:55.059 [http-nio-8080-exec-4] DEBUG o.s.d.r.c.s.TransactionalRepositoryProxyPostProcessor$CustomAnnotationTransactionAttributeSource.getTransactionAttribute - Adding transactional method 'findAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+12-06-2019 00:00:55.060 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager.doGetTransaction - Found thread-bound EntityManager [SessionImpl(294505962<open>)] for JPA transaction
+12-06-2019 00:00:55.061 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager.getTransaction - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+12-06-2019 00:00:55.061 [http-nio-8080-exec-4] DEBUG o.s.jdbc.datasource.DataSourceUtils.prepareConnectionForTransaction - Setting JDBC Connection [HikariProxyConnection@1431421850 wrapping org.postgresql.jdbc.PgConnection@4800969c] read-only
+12-06-2019 00:00:55.062 [http-nio-8080-exec-4] DEBUG org.postgresql.jdbc.PgConnection.setReadOnly -   setReadOnly = true
+12-06-2019 00:00:55.063 [http-nio-8080-exec-4] DEBUG o.h.e.t.internal.TransactionImpl.<init> - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+12-06-2019 00:00:55.063 [http-nio-8080-exec-4] DEBUG o.h.e.t.internal.TransactionImpl.begin - begin
+12-06-2019 00:00:55.063 [http-nio-8080-exec-4] DEBUG org.postgresql.jdbc.PgConnection.setAutoCommit -   setAutoCommit = false
+12-06-2019 00:00:55.064 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager.doBegin - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7514d467]
+12-06-2019 00:00:55.064 [http-nio-8080-exec-4] DEBUG o.h.q.c.internal.CriteriaQueryImpl.interpret - Rendered criteria query -> select generatedAlias0 from Company as generatedAlias0
+12-06-2019 00:00:55.066 [http-nio-8080-exec-4] DEBUG o.h.h.i.ast.QueryTranslatorImpl.parse - parse() - HQL: select generatedAlias0 from com.sridhar.example.model.Company as generatedAlias0
+12-06-2019 00:00:55.068 [http-nio-8080-exec-4] DEBUG o.h.hql.internal.ast.ErrorTracker.throwQueryException - throwQueryException() : no errors
+12-06-2019 00:00:55.069 [http-nio-8080-exec-4] DEBUG o.h.h.i.ast.QueryTranslatorImpl.showHqlAst - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[IDENT] Node: 'com'
+       |     |  |  |  |  \-[IDENT] Node: 'sridhar'
+       |     |  |  |  \-[IDENT] Node: 'example'
+       |     |  |  \-[IDENT] Node: 'model'
+       |     |  \-[IDENT] Node: 'Company'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+12-06-2019 00:00:55.069 [http-nio-8080-exec-4] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker.beforeStatement - select << begin [level=1, statement=select]
+12-06-2019 00:00:55.070 [http-nio-8080-exec-4] DEBUG o.h.h.internal.ast.tree.FromElement.doInitialize - FromClause{level=1} : com.sridhar.example.model.Company (generatedAlias0) -> company0_
+12-06-2019 00:00:55.071 [http-nio-8080-exec-4] DEBUG o.h.h.i.ast.tree.FromReferenceNode.setResolved - Resolved : generatedAlias0 -> company0_.id
+12-06-2019 00:00:55.071 [http-nio-8080-exec-4] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker.beforeStatementCompletion - select : finishing up [level=1, statement=select]
+12-06-2019 00:00:55.073 [http-nio-8080-exec-4] DEBUG o.h.hql.internal.ast.HqlSqlWalker.processQuery - processQuery() :  ( SELECT ( {select clause} company0_.id ) ( FromClause{level=1} company company0_ ) )
+12-06-2019 00:00:55.073 [http-nio-8080-exec-4] DEBUG o.h.h.i.ast.util.JoinProcessor.addJoinNodes - Using FROM fragment [company company0_]
+12-06-2019 00:00:55.074 [http-nio-8080-exec-4] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker.afterStatementCompletion - select >> end [level=1, statement=select]
+12-06-2019 00:00:55.074 [http-nio-8080-exec-4] DEBUG o.h.h.i.ast.QueryTranslatorImpl.analyze - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (company)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'company0_.id as id1_1_' {alias=generatedAlias0, className=com.sridhar.example.model.Company, tableAlias=company0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'company0_.category as category2_1_, company0_.ceo as ceo3_1_, company0_.chairman as chairman4_1_, company0_.name as name5_1_, company0_.start_date as start_da6_1_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[company0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'company company0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=company,tableAlias=company0_,origin=null,columns={,className=com.sridhar.example.model.Company}}
+
+12-06-2019 00:00:55.075 [http-nio-8080-exec-4] DEBUG o.h.hql.internal.ast.ErrorTracker.throwQueryException - throwQueryException() : no errors
+12-06-2019 00:00:55.075 [http-nio-8080-exec-4] DEBUG o.h.h.i.ast.QueryTranslatorImpl.generate - HQL: select generatedAlias0 from com.sridhar.example.model.Company as generatedAlias0
+12-06-2019 00:00:55.075 [http-nio-8080-exec-4] DEBUG o.h.h.i.ast.QueryTranslatorImpl.generate - SQL: select company0_.id as id1_1_, company0_.category as category2_1_, company0_.ceo as ceo3_1_, company0_.chairman as chairman4_1_, company0_.name as name5_1_, company0_.start_date as start_da6_1_ from company company0_
+12-06-2019 00:00:55.076 [http-nio-8080-exec-4] DEBUG o.h.hql.internal.ast.ErrorTracker.throwQueryException - throwQueryException() : no errors
+12-06-2019 00:00:55.077 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL.logStatement - select company0_.id as id1_1_, company0_.category as category2_1_, company0_.ceo as ceo3_1_, company0_.chairman as chairman4_1_, company0_.name as name5_1_, company0_.start_date as start_da6_1_ from company company0_
+Hibernate: select company0_.id as id1_1_, company0_.category as category2_1_, company0_.ceo as ceo3_1_, company0_.chairman as chairman4_1_, company0_.name as name5_1_, company0_.start_date as start_da6_1_ from company company0_
+12-06-2019 00:00:55.079 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.debugf - Result set row: 0
+12-06-2019 00:00:55.080 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.getRow - Result row: EntityKey[com.sridhar.example.model.Company#1]
+12-06-2019 00:00:55.081 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.debugf - Result set row: 1
+12-06-2019 00:00:55.082 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.getRow - Result row: EntityKey[com.sridhar.example.model.Company#2]
+12-06-2019 00:00:55.082 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.debugf - Result set row: 2
+12-06-2019 00:00:55.082 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.getRow - Result row: EntityKey[com.sridhar.example.model.Company#3]
+12-06-2019 00:00:55.083 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.debugf - Result set row: 3
+12-06-2019 00:00:55.083 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.getRow - Result row: EntityKey[com.sridhar.example.model.Company#4]
+12-06-2019 00:00:55.083 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.debugf - Result set row: 4
+12-06-2019 00:00:55.084 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.getRow - Result row: EntityKey[com.sridhar.example.model.Company#5]
+12-06-2019 00:00:55.084 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.debugf - Result set row: 5
+12-06-2019 00:00:55.084 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.getRow - Result row: EntityKey[com.sridhar.example.model.Company#6]
+12-06-2019 00:00:55.085 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.debugf - Result set row: 6
+12-06-2019 00:00:55.085 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.getRow - Result row: EntityKey[com.sridhar.example.model.Company#7]
+12-06-2019 00:00:55.085 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.debugf - Result set row: 7
+12-06-2019 00:00:55.086 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.getRow - Result row: EntityKey[com.sridhar.example.model.Company#8]
+12-06-2019 00:00:55.086 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.debugf - Result set row: 8
+12-06-2019 00:00:55.087 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.getRow - Result row: EntityKey[com.sridhar.example.model.Company#9]
+12-06-2019 00:00:55.087 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.debugf - Result set row: 9
+12-06-2019 00:00:55.088 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.getRow - Result row: EntityKey[com.sridhar.example.model.Company#10]
+12-06-2019 00:00:55.088 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.debugf - Result set row: 10
+12-06-2019 00:00:55.088 [http-nio-8080-exec-4] DEBUG org.hibernate.loader.Loader.getRow - Result row: EntityKey[com.sridhar.example.model.Company#11]
+12-06-2019 00:00:55.091 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Resolving associations for [com.sridhar.example.model.Company#1]
+12-06-2019 00:00:55.091 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Done materializing entity [com.sridhar.example.model.Company#1]
+12-06-2019 00:00:55.091 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Resolving associations for [com.sridhar.example.model.Company#2]
+12-06-2019 00:00:55.092 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Done materializing entity [com.sridhar.example.model.Company#2]
+12-06-2019 00:00:55.092 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Resolving associations for [com.sridhar.example.model.Company#3]
+12-06-2019 00:00:55.093 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Done materializing entity [com.sridhar.example.model.Company#3]
+12-06-2019 00:00:55.093 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Resolving associations for [com.sridhar.example.model.Company#4]
+12-06-2019 00:00:55.094 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Done materializing entity [com.sridhar.example.model.Company#4]
+12-06-2019 00:00:55.094 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Resolving associations for [com.sridhar.example.model.Company#5]
+12-06-2019 00:00:55.095 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Done materializing entity [com.sridhar.example.model.Company#5]
+12-06-2019 00:00:55.095 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Resolving associations for [com.sridhar.example.model.Company#6]
+12-06-2019 00:00:55.096 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Done materializing entity [com.sridhar.example.model.Company#6]
+12-06-2019 00:00:55.096 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Resolving associations for [com.sridhar.example.model.Company#7]
+12-06-2019 00:00:55.097 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Done materializing entity [com.sridhar.example.model.Company#7]
+12-06-2019 00:00:55.097 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Resolving associations for [com.sridhar.example.model.Company#8]
+12-06-2019 00:00:55.098 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Done materializing entity [com.sridhar.example.model.Company#8]
+12-06-2019 00:00:55.098 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Resolving associations for [com.sridhar.example.model.Company#9]
+12-06-2019 00:00:55.099 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Done materializing entity [com.sridhar.example.model.Company#9]
+12-06-2019 00:00:55.099 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Resolving associations for [com.sridhar.example.model.Company#10]
+12-06-2019 00:00:55.100 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Done materializing entity [com.sridhar.example.model.Company#10]
+12-06-2019 00:00:55.100 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Resolving associations for [com.sridhar.example.model.Company#11]
+12-06-2019 00:00:55.101 [http-nio-8080-exec-4] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Done materializing entity [com.sridhar.example.model.Company#11]
+12-06-2019 00:00:55.101 [http-nio-8080-exec-4] DEBUG o.h.stat.internal.StatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from Company as generatedAlias0, time: 24ms, rows: 11
+12-06-2019 00:00:55.103 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager.processCommit - Initiating transaction commit
+12-06-2019 00:00:55.103 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager.doCommit - Committing JPA transaction on EntityManager [SessionImpl(294505962<open>)]
+12-06-2019 00:00:55.104 [http-nio-8080-exec-4] DEBUG o.h.e.t.internal.TransactionImpl.commit - committing
+12-06-2019 00:00:55.104 [http-nio-8080-exec-4] DEBUG org.postgresql.jdbc.PgConnection.setAutoCommit -   setAutoCommit = true
+12-06-2019 00:00:55.105 [http-nio-8080-exec-4] DEBUG o.s.jdbc.datasource.DataSourceUtils.resetConnectionAfterTransaction - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1431421850 wrapping org.postgresql.jdbc.PgConnection@4800969c]
+12-06-2019 00:00:55.105 [http-nio-8080-exec-4] DEBUG org.postgresql.jdbc.PgConnection.setReadOnly -   setReadOnly = false
+12-06-2019 00:00:55.106 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager.doCleanupAfterCompletion - Not closing pre-bound JPA EntityManager after transaction
+12-06-2019 00:00:55.108 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor.writeWithMessageConverters - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+12-06-2019 00:00:55.109 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor.traceDebug - Writing [[com.sridhar.example.model.Company@72466f13, com.sridhar.example.model.Company@5ca4179b, com.sridhar (truncated)...]
+12-06-2019 00:00:55.116 [http-nio-8080-exec-4] DEBUG o.s.s.w.h.writers.HstsHeaderWriter.writeHeaders - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@4c5d2404
+12-06-2019 00:00:55.117 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor.afterCompletion - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+12-06-2019 00:00:55.117 [http-nio-8080-exec-4] INFO  o.h.e.i.StatisticalLoggingSessionEventListener.end - Session Metrics {
+    25892 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    74411 nanoseconds spent preparing 1 JDBC statements;
+    1526444 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    6221 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+12-06-2019 00:00:55.118 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet.logResult - Completed 200 OK
+12-06-2019 00:00:55.118 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.ExceptionTranslationFilter.doFilter - Chain processed normally
+12-06-2019 00:00:55.118 [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter.doFilter - SecurityContextHolder now cleared, as request processing completed
+12-06-2019 00:00:55.119 [http-nio-8080-exec-4] DEBUG o.a.t.util.net.SocketWrapperBase.log - Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@d602e3f:org.apache.tomcat.util.net.NioChannel@3a7c03b:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:57380]], Read from buffer: [0]
+12-06-2019 00:00:55.119 [http-nio-8080-exec-4] DEBUG o.apache.tomcat.util.net.NioEndpoint.log - Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@d602e3f:org.apache.tomcat.util.net.NioChannel@3a7c03b:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:57380]], Read direct from socket: [0]
+12-06-2019 00:00:55.119 [http-nio-8080-exec-4] DEBUG o.a.coyote.http11.Http11Processor.log - Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@d602e3f:org.apache.tomcat.util.net.NioChannel@3a7c03b:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:57380]], Status in: [OPEN_READ], State out: [OPEN]
+

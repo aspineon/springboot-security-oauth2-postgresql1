@@ -1,0 +1,225 @@
+12-06-2019 00:00:30.116 [http-nio-8080-exec-3] DEBUG o.a.t.util.net.SocketWrapperBase.log - Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@d602e3f:org.apache.tomcat.util.net.NioChannel@3a7c03b:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:57380]], Read from buffer: [0]
+12-06-2019 00:00:30.117 [http-nio-8080-exec-3] DEBUG o.apache.tomcat.util.net.NioEndpoint.log - Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@d602e3f:org.apache.tomcat.util.net.NioChannel@3a7c03b:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:57380]], Read direct from socket: [559]
+12-06-2019 00:00:30.117 [http-nio-8080-exec-3] DEBUG o.a.coyote.http11.Http11InputBuffer.log - Received [POST /oauth/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+cache-control: no-cache
+Postman-Token: 61a0d8e6-dcbc-447e-bcba-31474fe22327
+Authorization: Basic c3ByaW5nLXNlY3VyaXR5LW9hdXRoMi1yZWFkLXdyaXRlLWNsaWVudDpzcHJpbmctc2VjdXJpdHktb2F1dGgyLXJlYWQtd3JpdGUtY2xpZW50LXBhc3N3b3JkMTIzNA==
+User-Agent: PostmanRuntime/7.6.0
+Accept: */*
+Host: localhost:8080
+cookie: JSESSIONID=75930570076E6000E22D5A8E717885B8
+accept-encoding: gzip, deflate
+content-length: 53
+Connection: keep-alive
+
+grant_type=password&username=admin&password=admin1234]
+12-06-2019 00:00:30.117 [http-nio-8080-exec-3] DEBUG o.a.t.u.http.Rfc6265CookieProcessor.log - Cookies: Parsing b[]: JSESSIONID=75930570076E6000E22D5A8E717885B8
+12-06-2019 00:00:30.117 [http-nio-8080-exec-3] DEBUG o.a.catalina.connector.CoyoteAdapter.log -  Requested cookie session id is 75930570076E6000E22D5A8E717885B8
+12-06-2019 00:00:30.118 [http-nio-8080-exec-3] DEBUG o.a.c.a.AuthenticatorBase.log - Security checking request POST /oauth/token
+12-06-2019 00:00:30.118 [http-nio-8080-exec-3] DEBUG org.apache.catalina.realm.RealmBase.log -   No applicable constraints defined
+12-06-2019 00:00:30.118 [http-nio-8080-exec-3] DEBUG o.a.c.a.AuthenticatorBase.log -  Not subject to any constraint
+12-06-2019 00:00:30.118 [http-nio-8080-exec-3] DEBUG o.apache.tomcat.util.http.Parameters.log - Set encoding to UTF-8
+12-06-2019 00:00:30.118 [http-nio-8080-exec-3] DEBUG o.apache.tomcat.util.http.Parameters.log - Start processing with input [grant_type=password&username=admin&password=admin1234]
+12-06-2019 00:00:30.119 [http-nio-8080-exec-3] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/oauth/token']
+12-06-2019 00:00:30.119 [http-nio-8080-exec-3] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Checking match of request : '/oauth/token'; against '/oauth/token'
+12-06-2019 00:00:30.119 [http-nio-8080-exec-3] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - matched
+12-06-2019 00:00:30.119 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy.doFilter - /oauth/token at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+12-06-2019 00:00:30.119 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy.doFilter - /oauth/token at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+12-06-2019 00:00:30.120 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy.doFilter - /oauth/token at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+12-06-2019 00:00:30.120 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy.doFilter - /oauth/token at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+12-06-2019 00:00:30.120 [http-nio-8080-exec-3] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/logout', GET]
+12-06-2019 00:00:30.120 [http-nio-8080-exec-3] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Request 'POST /oauth/token' doesn't match 'GET /logout'
+12-06-2019 00:00:30.120 [http-nio-8080-exec-3] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/logout', POST]
+12-06-2019 00:00:30.120 [http-nio-8080-exec-3] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Checking match of request : '/oauth/token'; against '/logout'
+12-06-2019 00:00:30.121 [http-nio-8080-exec-3] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/logout', PUT]
+12-06-2019 00:00:30.121 [http-nio-8080-exec-3] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Request 'POST /oauth/token' doesn't match 'PUT /logout'
+12-06-2019 00:00:30.121 [http-nio-8080-exec-3] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - Trying to match using Ant [pattern='/logout', DELETE]
+12-06-2019 00:00:30.121 [http-nio-8080-exec-3] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Request 'POST /oauth/token' doesn't match 'DELETE /logout'
+12-06-2019 00:00:30.121 [http-nio-8080-exec-3] DEBUG o.s.s.w.u.matcher.OrRequestMatcher.matches - No matches found
+12-06-2019 00:00:30.121 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy.doFilter - /oauth/token at position 5 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+12-06-2019 00:00:30.121 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter.doFilterInternal - Basic Authentication Authorization header found for user 'spring-security-oauth2-read-write-client'
+12-06-2019 00:00:30.121 [http-nio-8080-exec-3] DEBUG o.s.s.authentication.ProviderManager.authenticate - Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+12-06-2019 00:00:30.253 [http-nio-8080-exec-3] DEBUG o.s.b.f.s.DefaultListableBeanFactory.getSingleton - Creating shared instance of singleton bean 'scopedTarget.clientDetailsService'
+12-06-2019 00:00:30.254 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.query - Executing prepared SQL query
+12-06-2019 00:00:30.254 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.execute - Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+12-06-2019 00:00:30.254 [http-nio-8080-exec-3] DEBUG o.s.jdbc.datasource.DataSourceUtils.doGetConnection - Fetching JDBC Connection from DataSource
+12-06-2019 00:00:30.258 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter.doFilterInternal - Authentication success: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@31356e0c: Principal: org.springframework.security.core.userdetails.User@3116b9ab: Username: spring-security-oauth2-read-write-client; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: USER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffbcba8: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 75930570076E6000E22D5A8E717885B8; Granted Authorities: USER
+12-06-2019 00:00:30.258 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy.doFilter - /oauth/token at position 6 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+12-06-2019 00:00:30.258 [http-nio-8080-exec-3] DEBUG o.s.s.w.s.DefaultSavedRequest.propertyEquals - pathInfo: both null (property equals)
+12-06-2019 00:00:30.258 [http-nio-8080-exec-3] DEBUG o.s.s.w.s.DefaultSavedRequest.propertyEquals - queryString: both null (property equals)
+12-06-2019 00:00:30.258 [http-nio-8080-exec-3] DEBUG o.s.s.w.s.DefaultSavedRequest.propertyEquals - requestURI: arg1=/showCompany/All; arg2=/oauth/token (property not equals)
+12-06-2019 00:00:30.259 [http-nio-8080-exec-3] DEBUG o.s.s.w.s.HttpSessionRequestCache.getMatchingRequest - saved request doesn't match
+12-06-2019 00:00:30.259 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy.doFilter - /oauth/token at position 7 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+12-06-2019 00:00:30.259 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy.doFilter - /oauth/token at position 8 of 11 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+12-06-2019 00:00:30.259 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter.doFilter - SecurityContextHolder not populated with anonymous token, as it already contained: 'org.springframework.security.authentication.UsernamePasswordAuthenticationToken@31356e0c: Principal: org.springframework.security.core.userdetails.User@3116b9ab: Username: spring-security-oauth2-read-write-client; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: USER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffbcba8: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 75930570076E6000E22D5A8E717885B8; Granted Authorities: USER'
+12-06-2019 00:00:30.259 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy.doFilter - /oauth/token at position 9 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+12-06-2019 00:00:30.259 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.s.CompositeSessionAuthenticationStrategy.onAuthentication - Delegating to org.springframework.security.web.authentication.session.ChangeSessionIdAuthenticationStrategy@5a02f969
+12-06-2019 00:00:30.261 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy.doFilter - /oauth/token at position 10 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+12-06-2019 00:00:30.261 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy.doFilter - /oauth/token at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+12-06-2019 00:00:30.261 [http-nio-8080-exec-3] DEBUG o.s.s.w.u.m.AntPathRequestMatcher.matches - Checking match of request : '/oauth/token'; against '/oauth/token'
+12-06-2019 00:00:30.262 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor.beforeInvocation - Secure object: FilterInvocation: URL: /oauth/token; Attributes: [fullyAuthenticated]
+12-06-2019 00:00:30.262 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor.authenticateIfRequired - Previously Authenticated: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@31356e0c: Principal: org.springframework.security.core.userdetails.User@3116b9ab: Username: spring-security-oauth2-read-write-client; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: USER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffbcba8: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 75930570076E6000E22D5A8E717885B8; Granted Authorities: USER
+12-06-2019 00:00:30.262 [http-nio-8080-exec-3] DEBUG o.s.s.access.vote.AffirmativeBased.decide - Voter: org.springframework.security.web.access.expression.WebExpressionVoter@2e923d64, returned: 1
+12-06-2019 00:00:30.263 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor.beforeInvocation - Authorization successful
+12-06-2019 00:00:30.263 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor.beforeInvocation - RunAsManager did not change Authentication object
+12-06-2019 00:00:30.263 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy.doFilter - /oauth/token reached end of additional filter chain; proceeding with original chain
+12-06-2019 00:00:30.264 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet.traceDebug - POST "/oauth/token", parameters={masked}
+12-06-2019 00:00:30.265 [http-nio-8080-exec-3] DEBUG o.s.s.o.p.e.FrameworkEndpointHandlerMapping.getHandler - Mapped to public org.springframework.http.ResponseEntity<org.springframework.security.oauth2.common.OAuth2AccessToken> org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.postAccessToken(java.security.Principal,java.util.Map<java.lang.String, java.lang.String>) throws org.springframework.web.HttpRequestMethodNotSupportedException
+12-06-2019 00:00:30.267 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.query - Executing prepared SQL query
+12-06-2019 00:00:30.267 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.execute - Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+12-06-2019 00:00:30.267 [http-nio-8080-exec-3] DEBUG o.s.jdbc.datasource.DataSourceUtils.doGetConnection - Fetching JDBC Connection from DataSource
+12-06-2019 00:00:30.269 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.query - Executing prepared SQL query
+12-06-2019 00:00:30.269 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.execute - Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+12-06-2019 00:00:30.269 [http-nio-8080-exec-3] DEBUG o.s.jdbc.datasource.DataSourceUtils.doGetConnection - Fetching JDBC Connection from DataSource
+12-06-2019 00:00:30.270 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.query - Executing prepared SQL query
+12-06-2019 00:00:30.270 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.execute - Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+12-06-2019 00:00:30.271 [http-nio-8080-exec-3] DEBUG o.s.jdbc.datasource.DataSourceUtils.doGetConnection - Fetching JDBC Connection from DataSource
+12-06-2019 00:00:30.271 [http-nio-8080-exec-3] DEBUG o.s.s.o.p.p.ResourceOwnerPasswordTokenGranter.grant - Getting access token for: spring-security-oauth2-read-write-client
+12-06-2019 00:00:30.272 [http-nio-8080-exec-3] DEBUG o.s.s.authentication.ProviderManager.authenticate - Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+12-06-2019 00:00:30.387 [http-nio-8080-exec-3] DEBUG c.s.e.service.UserDetailsServiceImpl.loadUserByUsername - in loadUserByUsername with username:admin
+12-06-2019 00:00:30.387 [http-nio-8080-exec-3] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke - Creating new EntityManager for shared EntityManager invocation
+12-06-2019 00:00:30.388 [http-nio-8080-exec-3] DEBUG o.h.q.c.internal.CriteriaQueryImpl.interpret - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.username=:param0
+12-06-2019 00:00:30.389 [http-nio-8080-exec-3] DEBUG o.h.h.i.QueryTranslatorFactoryInitiator.initiateService - QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@35349f59
+12-06-2019 00:00:30.389 [http-nio-8080-exec-3] INFO  o.h.h.i.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+12-06-2019 00:00:30.389 [http-nio-8080-exec-3] DEBUG o.h.h.i.ast.QueryTranslatorImpl.parse - parse() - HQL: select generatedAlias0 from com.sridhar.example.security.User as generatedAlias0 where generatedAlias0.username=:param0
+12-06-2019 00:00:30.390 [http-nio-8080-exec-3] DEBUG o.h.hql.internal.ast.ErrorTracker.throwQueryException - throwQueryException() : no errors
+12-06-2019 00:00:30.391 [http-nio-8080-exec-3] DEBUG o.h.h.i.ast.QueryTranslatorImpl.showHqlAst - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  +-[IDENT] Node: 'com'
+    |  |     |  |  |  |  \-[IDENT] Node: 'sridhar'
+    |  |     |  |  |  \-[IDENT] Node: 'example'
+    |  |     |  |  \-[IDENT] Node: 'security'
+    |  |     |  \-[IDENT] Node: 'User'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'username'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+12-06-2019 00:00:30.391 [http-nio-8080-exec-3] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker.beforeStatement - select << begin [level=1, statement=select]
+12-06-2019 00:00:30.392 [http-nio-8080-exec-3] DEBUG o.h.h.internal.ast.tree.FromElement.doInitialize - FromClause{level=1} : com.sridhar.example.security.User (generatedAlias0) -> user0_
+12-06-2019 00:00:30.392 [http-nio-8080-exec-3] DEBUG o.h.h.i.ast.tree.FromReferenceNode.setResolved - Resolved : generatedAlias0 -> user0_.id
+12-06-2019 00:00:30.392 [http-nio-8080-exec-3] DEBUG o.h.h.i.ast.tree.FromReferenceNode.setResolved - Resolved : generatedAlias0 -> user0_.id
+12-06-2019 00:00:30.393 [http-nio-8080-exec-3] DEBUG o.h.hql.internal.ast.tree.DotNode.getDataType - getDataType() : username -> org.hibernate.type.StringType@6c022578
+12-06-2019 00:00:30.394 [http-nio-8080-exec-3] DEBUG o.h.h.i.ast.tree.FromReferenceNode.setResolved - Resolved : generatedAlias0.username -> user0_.user_name
+12-06-2019 00:00:30.394 [http-nio-8080-exec-3] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker.beforeStatementCompletion - select : finishing up [level=1, statement=select]
+12-06-2019 00:00:30.395 [http-nio-8080-exec-3] DEBUG o.h.hql.internal.ast.HqlSqlWalker.processQuery - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} users user0_ ) ( where ( = ( user0_.user_name user0_.id username ) ? ) ) )
+12-06-2019 00:00:30.396 [http-nio-8080-exec-3] DEBUG o.h.h.i.ast.util.JoinProcessor.addJoinNodes - Using FROM fragment [users user0_]
+12-06-2019 00:00:30.397 [http-nio-8080-exec-3] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker.afterStatementCompletion - select >> end [level=1, statement=select]
+12-06-2019 00:00:30.398 [http-nio-8080-exec-3] DEBUG o.h.h.i.ast.QueryTranslatorImpl.analyze - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (users)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_2_' {alias=generatedAlias0, className=com.sridhar.example.security.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.account_expired as account_2_2_, user0_.account_locked as account_3_2_, user0_.credentials_expired as credenti4_2_, user0_.enabled as enabled5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'users user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=users,tableAlias=user0_,origin=null,columns={,className=com.sridhar.example.security.User}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'user0_.user_name' {propertyName=username,dereferenceType=PRIMITIVE,getPropertyPath=username,path=generatedAlias0.username,tableAlias=user0_,className=com.sridhar.example.security.User,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'user0_.id' {alias=generatedAlias0, className=com.sridhar.example.security.User, tableAlias=user0_}
+          |  \-[IDENT] IdentNode: 'username' {originalText=username}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@6c022578}
+
+12-06-2019 00:00:30.398 [http-nio-8080-exec-3] DEBUG o.h.hql.internal.ast.ErrorTracker.throwQueryException - throwQueryException() : no errors
+12-06-2019 00:00:30.399 [http-nio-8080-exec-3] DEBUG o.h.h.i.ast.QueryTranslatorImpl.generate - HQL: select generatedAlias0 from com.sridhar.example.security.User as generatedAlias0 where generatedAlias0.username=:param0
+12-06-2019 00:00:30.399 [http-nio-8080-exec-3] DEBUG o.h.h.i.ast.QueryTranslatorImpl.generate - SQL: select user0_.id as id1_2_, user0_.account_expired as account_2_2_, user0_.account_locked as account_3_2_, user0_.credentials_expired as credenti4_2_, user0_.enabled as enabled5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from users user0_ where user0_.user_name=?
+12-06-2019 00:00:30.400 [http-nio-8080-exec-3] DEBUG o.h.hql.internal.ast.ErrorTracker.throwQueryException - throwQueryException() : no errors
+12-06-2019 00:00:30.418 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL.logStatement - select user0_.id as id1_2_, user0_.account_expired as account_2_2_, user0_.account_locked as account_3_2_, user0_.credentials_expired as credenti4_2_, user0_.enabled as enabled5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from users user0_ where user0_.user_name=?
+Hibernate: select user0_.id as id1_2_, user0_.account_expired as account_2_2_, user0_.account_locked as account_3_2_, user0_.credentials_expired as credenti4_2_, user0_.enabled as enabled5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from users user0_ where user0_.user_name=?
+12-06-2019 00:00:30.420 [http-nio-8080-exec-3] DEBUG org.hibernate.loader.Loader.debugf - Result set row: 0
+12-06-2019 00:00:30.420 [http-nio-8080-exec-3] DEBUG org.hibernate.loader.Loader.getRow - Result row: EntityKey[com.sridhar.example.security.User#1]
+12-06-2019 00:00:30.421 [http-nio-8080-exec-3] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Resolving associations for [com.sridhar.example.security.User#1]
+12-06-2019 00:00:30.421 [http-nio-8080-exec-3] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Done materializing entity [com.sridhar.example.security.User#1]
+12-06-2019 00:00:30.421 [http-nio-8080-exec-3] DEBUG o.h.l.c.p.AbstractLoadPlanBasedCollectionInitializer.initialize - Loading collection: [com.sridhar.example.security.User.authorities#1]
+12-06-2019 00:00:30.422 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL.logStatement - select authoritie0_.user_id as user_id1_3_0_, authoritie0_.authority_id as authorit2_3_0_, authority1_.id as id1_0_1_, authority1_.name as name2_0_1_ from users_authorities authoritie0_ inner join authority authority1_ on authoritie0_.authority_id=authority1_.id where authoritie0_.user_id=?
+Hibernate: select authoritie0_.user_id as user_id1_3_0_, authoritie0_.authority_id as authorit2_3_0_, authority1_.id as id1_0_1_, authority1_.name as name2_0_1_ from users_authorities authoritie0_ inner join authority authority1_ on authoritie0_.authority_id=authority1_.id where authoritie0_.user_id=?
+12-06-2019 00:00:30.423 [http-nio-8080-exec-3] DEBUG o.h.l.p.e.p.i.ResultSetProcessorImpl.handlePotentiallyEmptyCollectionRootReturns - Preparing collection intializer : [com.sridhar.example.security.User.authorities#1]
+12-06-2019 00:00:30.423 [http-nio-8080-exec-3] DEBUG o.h.l.p.e.p.i.ResultSetProcessorImpl.extractResults - Starting ResultSet row #0
+12-06-2019 00:00:30.424 [http-nio-8080-exec-3] DEBUG o.h.l.p.e.p.i.CollectionReferenceInitializerImpl.finishUpRow - Found row of collection: [com.sridhar.example.security.User.authorities#1]
+12-06-2019 00:00:30.424 [http-nio-8080-exec-3] DEBUG o.h.l.p.e.p.i.ResultSetProcessorImpl.extractResults - Starting ResultSet row #1
+12-06-2019 00:00:30.424 [http-nio-8080-exec-3] DEBUG o.h.l.p.e.p.i.CollectionReferenceInitializerImpl.finishUpRow - Found row of collection: [com.sridhar.example.security.User.authorities#1]
+12-06-2019 00:00:30.425 [http-nio-8080-exec-3] DEBUG o.h.l.p.e.p.i.ResultSetProcessorImpl.extractResults - Starting ResultSet row #2
+12-06-2019 00:00:30.425 [http-nio-8080-exec-3] DEBUG o.h.l.p.e.p.i.CollectionReferenceInitializerImpl.finishUpRow - Found row of collection: [com.sridhar.example.security.User.authorities#1]
+12-06-2019 00:00:30.426 [http-nio-8080-exec-3] DEBUG o.h.l.p.e.p.i.ResultSetProcessorImpl.extractResults - Starting ResultSet row #3
+12-06-2019 00:00:30.426 [http-nio-8080-exec-3] DEBUG o.h.l.p.e.p.i.CollectionReferenceInitializerImpl.finishUpRow - Found row of collection: [com.sridhar.example.security.User.authorities#1]
+12-06-2019 00:00:30.427 [http-nio-8080-exec-3] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Resolving associations for [com.sridhar.example.security.Authority#1]
+12-06-2019 00:00:30.428 [http-nio-8080-exec-3] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Done materializing entity [com.sridhar.example.security.Authority#1]
+12-06-2019 00:00:30.428 [http-nio-8080-exec-3] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Resolving associations for [com.sridhar.example.security.Authority#2]
+12-06-2019 00:00:30.429 [http-nio-8080-exec-3] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Done materializing entity [com.sridhar.example.security.Authority#2]
+12-06-2019 00:00:30.430 [http-nio-8080-exec-3] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Resolving associations for [com.sridhar.example.security.Authority#3]
+12-06-2019 00:00:30.431 [http-nio-8080-exec-3] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Done materializing entity [com.sridhar.example.security.Authority#3]
+12-06-2019 00:00:30.431 [http-nio-8080-exec-3] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Resolving associations for [com.sridhar.example.security.Authority#4]
+12-06-2019 00:00:30.432 [http-nio-8080-exec-3] DEBUG o.h.engine.internal.TwoPhaseLoad.doInitializeEntity - Done materializing entity [com.sridhar.example.security.Authority#4]
+12-06-2019 00:00:30.432 [http-nio-8080-exec-3] DEBUG o.h.e.l.i.CollectionLoadContext.debugf - 1 collections were found in result set for role: com.sridhar.example.security.User.authorities
+12-06-2019 00:00:30.432 [http-nio-8080-exec-3] DEBUG o.h.e.l.i.CollectionLoadContext.endLoadingCollection - Collection fully initialized: [com.sridhar.example.security.User.authorities#1]
+12-06-2019 00:00:30.433 [http-nio-8080-exec-3] DEBUG o.h.e.l.i.CollectionLoadContext.debugf - 1 collections initialized for role: com.sridhar.example.security.User.authorities
+12-06-2019 00:00:30.433 [http-nio-8080-exec-3] DEBUG o.h.r.j.i.ResourceRegistryStandardImpl.release - HHH000387: ResultSet's statement was not registered
+12-06-2019 00:00:30.433 [http-nio-8080-exec-3] DEBUG o.h.l.c.p.AbstractLoadPlanBasedCollectionInitializer.initialize - Done loading collection
+12-06-2019 00:00:30.434 [http-nio-8080-exec-3] DEBUG o.h.stat.internal.StatisticsImpl.queryExecuted - HHH000117: HQL: select generatedAlias0 from User as generatedAlias0 where generatedAlias0.username=:param0, time: 15ms, rows: 1
+12-06-2019 00:00:30.434 [http-nio-8080-exec-3] INFO  o.h.e.i.StatisticalLoggingSessionEventListener.end - Session Metrics {
+    29082 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    173885 nanoseconds spent preparing 2 JDBC statements;
+    1400799 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+12-06-2019 00:00:30.434 [http-nio-8080-exec-3] DEBUG c.s.e.service.UserDetailsServiceImpl.loadUserByUsername - username fetched is:admin
+12-06-2019 00:00:30.435 [http-nio-8080-exec-3] DEBUG c.s.e.service.UserDetailsServiceImpl.loadUserByUsername - password fetched is:$2a$08$qvrzQZ7jJ7oy2p/msL4M0.l83Cd0jNsX6AJUitbgRXGzge4j035ha
+12-06-2019 00:00:30.467 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.query - Executing prepared SQL query
+12-06-2019 00:00:30.467 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.execute - Executing prepared SQL statement [select token_id, token from oauth_access_token where authentication_id = ?]
+12-06-2019 00:00:30.468 [http-nio-8080-exec-3] DEBUG o.s.jdbc.datasource.DataSourceUtils.doGetConnection - Fetching JDBC Connection from DataSource
+12-06-2019 00:00:30.469 [http-nio-8080-exec-3] DEBUG o.s.s.o.p.token.store.JdbcTokenStore.getAccessToken - Failed to find access token for authentication org.springframework.security.oauth2.provider.OAuth2Authentication@a9b0ddef: Principal: com.sridhar.example.security.User@94e791b; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: com.sridhar.example.security.Authority@71b215fa, com.sridhar.example.security.Authority@375f8c91, com.sridhar.example.security.Authority@83e6768, com.sridhar.example.security.Authority@7213caad
+12-06-2019 00:00:30.469 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.query - Executing prepared SQL query
+12-06-2019 00:00:30.469 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.execute - Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+12-06-2019 00:00:30.470 [http-nio-8080-exec-3] DEBUG o.s.jdbc.datasource.DataSourceUtils.doGetConnection - Fetching JDBC Connection from DataSource
+12-06-2019 00:00:30.471 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.query - Executing prepared SQL query
+12-06-2019 00:00:30.471 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.execute - Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+12-06-2019 00:00:30.471 [http-nio-8080-exec-3] DEBUG o.s.jdbc.datasource.DataSourceUtils.doGetConnection - Fetching JDBC Connection from DataSource
+12-06-2019 00:00:30.472 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.query - Executing prepared SQL query
+12-06-2019 00:00:30.473 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.execute - Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+12-06-2019 00:00:30.473 [http-nio-8080-exec-3] DEBUG o.s.jdbc.datasource.DataSourceUtils.doGetConnection - Fetching JDBC Connection from DataSource
+12-06-2019 00:00:30.474 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.query - Executing prepared SQL query
+12-06-2019 00:00:30.475 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.execute - Executing prepared SQL statement [select token_id, token from oauth_access_token where token_id = ?]
+12-06-2019 00:00:30.475 [http-nio-8080-exec-3] DEBUG o.s.jdbc.datasource.DataSourceUtils.doGetConnection - Fetching JDBC Connection from DataSource
+12-06-2019 00:00:30.476 [http-nio-8080-exec-3] INFO  o.s.s.o.p.token.store.JdbcTokenStore.readAccessToken - Failed to find access token for token 180e44ef-901f-4a5c-b121-e6d69b036f58
+12-06-2019 00:00:30.481 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.update - Executing prepared SQL update
+12-06-2019 00:00:30.481 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.execute - Executing prepared SQL statement [insert into oauth_access_token (token_id, token, authentication_id, user_name, client_id, authentication, refresh_token) values (?, ?, ?, ?, ?, ?, ?)]
+12-06-2019 00:00:30.482 [http-nio-8080-exec-3] DEBUG o.s.jdbc.datasource.DataSourceUtils.doGetConnection - Fetching JDBC Connection from DataSource
+12-06-2019 00:00:30.482 [http-nio-8080-exec-3] DEBUG o.s.j.support.lob.DefaultLobHandler.setBlobAsBytes - Set bytes for BLOB with length 959
+12-06-2019 00:00:30.483 [http-nio-8080-exec-3] DEBUG o.s.j.support.lob.DefaultLobHandler.setBlobAsBytes - Set bytes for BLOB with length 2979
+12-06-2019 00:00:30.487 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.update - Executing prepared SQL update
+12-06-2019 00:00:30.487 [http-nio-8080-exec-3] DEBUG o.s.jdbc.core.JdbcTemplate.execute - Executing prepared SQL statement [insert into oauth_refresh_token (token_id, token, authentication) values (?, ?, ?)]
+12-06-2019 00:00:30.488 [http-nio-8080-exec-3] DEBUG o.s.jdbc.datasource.DataSourceUtils.doGetConnection - Fetching JDBC Connection from DataSource
+12-06-2019 00:00:30.488 [http-nio-8080-exec-3] DEBUG o.s.j.support.lob.DefaultLobHandler.setBlobAsBytes - Set bytes for BLOB with length 322
+12-06-2019 00:00:30.488 [http-nio-8080-exec-3] DEBUG o.s.j.support.lob.DefaultLobHandler.setBlobAsBytes - Set bytes for BLOB with length 2979
+12-06-2019 00:00:30.492 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters - Found 'Content-Type:application/json;charset=UTF-8' in response
+12-06-2019 00:00:30.497 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug - Writing [180e44ef-901f-4a5c-b121-e6d69b036f58]
+12-06-2019 00:00:30.501 [http-nio-8080-exec-3] DEBUG o.s.s.w.h.writers.HstsHeaderWriter.writeHeaders - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2c0dbc76
+12-06-2019 00:00:30.502 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet.logResult - Completed 200 OK
+12-06-2019 00:00:30.502 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.ExceptionTranslationFilter.doFilter - Chain processed normally
+12-06-2019 00:00:30.502 [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter.doFilter - SecurityContextHolder now cleared, as request processing completed
+12-06-2019 00:00:30.503 [http-nio-8080-exec-3] DEBUG o.a.t.util.net.SocketWrapperBase.log - Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@d602e3f:org.apache.tomcat.util.net.NioChannel@3a7c03b:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:57380]], Read from buffer: [0]
+12-06-2019 00:00:30.503 [http-nio-8080-exec-3] DEBUG o.apache.tomcat.util.net.NioEndpoint.log - Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@d602e3f:org.apache.tomcat.util.net.NioChannel@3a7c03b:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:57380]], Read direct from socket: [0]
+12-06-2019 00:00:30.503 [http-nio-8080-exec-3] DEBUG o.a.coyote.http11.Http11Processor.log - Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@d602e3f:org.apache.tomcat.util.net.NioChannel@3a7c03b:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:57380]], Status in: [OPEN_READ], State out: [OPEN]
+12-06-2019 00:00:44.389 [Catalina-utility-1] DEBUG o.a.catalina.session.ManagerBase.log - Start expire sessions StandardManager at 1560277844389 sessioncount 1
+12-06-2019 00:00:44.390 [Catalina-utility-1] DEBUG o.a.catalina.session.ManagerBase.log - End expire sessions StandardManager processingTime 1 expired sessions: 0
+12-06-2019 00:00:44.580 [HikariPool-7 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool.logPoolState - HikariPool-7 - Pool stats (total=10, active=0, idle=10, waiting=0)
+
