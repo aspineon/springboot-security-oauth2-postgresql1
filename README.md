@@ -1,1 +1,2 @@
-This project is created after my learnings from other sample spring boot + security + oauth2 projects.
+This project is created after my learnings from other sample spring boot + security + oauth2 projects.  
+Please refer the word document for detailed explanation of the classes and various flows concerning the application.  
